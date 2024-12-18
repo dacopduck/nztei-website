@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NZTEI - Login</title>
+    <meta name="author" content="Long Duc Nguyen - AEU3000254" />  <!-- Long Duc Nguyen - AEU3000254 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- NZTEI Icon -->    
+    <link rel="icon" type="image/png" href="css/images/NZTEI.png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!-- Stylesheet -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Montserrat|Open+Sans|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Lato:300&display=swap" rel="stylesheet">
+<!-- JavaScript -->    
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<!-- Login Page -->
+<body>
+    <header>
+        <nav>   <!-- Navigation Bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        <div class="logo">
+            <img src="css/images/NZTEIlogo5.png" width="65" height="70">
+        </div>
+    </header>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') { nav.className = 'active'; }
+            else { nav.className = ''; }
+        });
+    </script>
+    <div class="container1">
+    </br>
+        <h1>Welcome to NZTEI</h1>
+        <img src="css/images/NZTEIlogo5.png">
+    </div>
+</br>
+</br>
+    <div class="register">
+        <form method="post" id="regform2" action="index.html">
+            <h3>Username</h3>
+            <label><input type="text" name="username" id="username" placeholder="Username"></label>
+            <br>
+            <h3>Password</h3>
+            <label><input type="password" name="pwd1" id="pwd1" placeholder="Password"></label>
+            
+            
+
+            <div class="buttons">
+            <button type="submit"> 
+                <img src="css/images/NZTEIbutton1.png" alt="buttonpng" border="0" />
+            </button>
+                
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="contacts">
+            <p>© 2023 New Zealand Tertiary Education Institution Ltd.</p>
+
+        </div>
+        <div class="soc-media">
+            <p>25 Federal Street, Auckland CBD, 1010</p>
+        </div>
+        <div class="copyright">
+            <p>Contact us by <a href="mailto:name@mail.com" style="color:white">support@nztei.ac.nz</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+html, body{
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    color: #505962;
+    font-family: 'Lato', sans-serif;
+}
+#textright {
+    text-align: right;
+}
+
+/* Google Map Integrated*/
+#map
+{
+    height: 500px;
+}
